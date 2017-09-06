@@ -702,7 +702,7 @@ system_type(Socket, Timeout, Options) ->
 	end.
 
 transfer_mode(Socket, Mode) ->
-	lftpc_sever:set_transfer_mode(Socket, Mode).
+	lftpc_server:set_transfer_mode(Socket, Mode).
 
 type(Socket, Type, Timeout, Options)
 		when Type =:= ascii
